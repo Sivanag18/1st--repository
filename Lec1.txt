@@ -1,0 +1,26 @@
+Lecture 1 - Objects and classes
+
+--------------------------------
+
+Procedural Programming (POP)
+1. Derived from Structural Programming 
+2. A program is divided into small parts called functions
+3. it follows top down approach
+ Examples: C, FORTRAN, Pascal, Basic etc..
+
+Object Oriented Programming(OOPs)
+1. OOPs is based on real world
+2. Program is divided into small parts called objects
+3. it follows bottom up approach
+ Examples: C++, Java, Python, C# etc..
+
+ -------------------------------
+-----Objects-----
+1. Anything that has a state and behaviour is known as an object.
+2. They store data in form of variables and operate on this data using methods/functions
+3.An object is an instance of a class
+
+-----Class-----
+1. A class is a group of objects which have common properties
+2. A class can be seen as a blueprint from which objects are created
+3. Classes can contain  Fields, Methods, Constructors, Nested class and interface
