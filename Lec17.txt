@@ -1,0 +1,59 @@
+//jagged arrays
+//columns  are created 
+int arr[][]=new int [rows][];
+//create new class called jagged arrays
+public class JaggedArrays{
+    static void printJaggedArray{
+        for(int i=0;i<arr.length;i++)//rows
+        {
+            for(int j=0;j<arr[i].length;j++)//columns
+            {
+                System.out.println(arr[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String args[]){
+        int arr[][] =new int [][];
+        arr[0]=new int[3];
+        arr[1]=new int [2];
+        arr[2]=new int [3];
+       printJaggedArray(arr);
+        int arr2[][]=new int [3][];
+        //arr2[0]={1,2,3};//we cannot use initializers list here because it doesn't create an object
+        //arr2[1]={4,5,6};
+        //arr2[2]={2,3,5};
+        //homogenous arrays
+        arr2[0]=new int[] {1,2,4};
+        arr2[1]=new int []{2,3,5};
+        arr2[2]=new int []{5,6,7};
+        System.out.println("*****....******....*****");
+        printJaggedArray(arr2);
+        
+        //printing jagged array properly 
+        //all rows in separate lines;
+
+    
+    
+//scanner class
+//to take inputs from the user on the console
+import java.util.Scanner;
+public class Nagasai{
+    public static void main(String args[])
+    {
+        Scanner input= new Scanner(System.in);
+        System.out.println("please enter your name:");
+        String name=input.next();
+        String lastName=input.next();
+        System.out.println("please enter your profession");
+        String profession=input.next();
+        System.out.println("name"+name);
+        System.out.println("lastName"+lastName);
+        System.out.println("profession"+profession);
+        
+        //whenever we need to take mixed input
+        //1.nubers and strings both are there
+        //2.words from a single line them complete next line or something like that
+        //0>user nextline and parse the data
+
+    }

@@ -1,0 +1,75 @@
+//access modifiers in java
+//1.public,2.private,3.default,4.protected
+//order of access modifiers public>protected>default>private
+package accessModifires1;
+public class A{
+    int x=10;//default or package private
+    private int y=15;
+    protected int z=20;
+    public int w=25;
+    public static void main(String args[]){
+      A obj =new A();
+      System.out.println(obj.x);
+      System.out.println(obj.y);//private is accesible in same package in any class
+      System.out.println(obj.w);
+      System.out.println(obj.z);
+    }
+}
+
+//another class in accessModifiers1 package
+public class B{
+    public static void main(String args[]){
+         A obj=new A();
+         System.out.println(obj.x);//default is accessible in same package
+          System.out.println(obj.y);//private is not accesible in outside the class.
+          System.out.println(obj.w);//public is accessible in every where outside the class or inside the class
+    
+    
+        }
+}
+//another class in another package called accessModifiers2
+package accessModifiers2;
+import accessModifiers1.A;
+public class C extends A{
+    public static void main(String [] args){
+        A obj = new A();
+        System.out.println(obj.x);//default is not accessible in outside the package
+        System.out.println(obj.y);//private is not accesible in outside the class.
+        System.out.println(obj.w);//public is accessible everywhere outside the package or class.
+        System.out.println(obj.z);//protected is not visible in different package of subclass.
+    }
+}
+//encapsulation in java
+package encapsulation;
+class Demo{
+    private int a=3;
+    private int a=33;
+    private int a=31;
+    private int a=35;
+    public int getA(){
+      return this.a;
+    }
+    public getB(){
+          return this.a;
+    }
+}
+public void setA(int a){
+    if(a>100){
+        this.a=a;
+        System.out.println("value of  A changed to :"+a);
+    }else{
+        System.out.println("cannot set value outside limitsZ");
+    }
+    
+}
+public void setB(int b){
+    this.b=b;
+}
+public encapsulationStudy{
+    public static void main(String args[]){
+      Demo d=new Demo();
+      System.out.println(d.a);//not visible because it is private
+      System.out.println(d.getA());//now we can read it from private accessmodifiers
+
+    }
+}
